@@ -11,7 +11,6 @@ public class Address {
     private String name;
     private String areaCode;
     
-    
     /**
      * Constructor.
      * 
@@ -38,7 +37,6 @@ public class Address {
     public void setAreaCode(String areaCode) {
         this.areaCode = areaCode;
     }
-    
     
     /**
      * Creates a copy of the address.

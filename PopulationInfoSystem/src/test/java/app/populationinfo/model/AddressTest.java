@@ -26,7 +26,6 @@ public class AddressTest {
         assertEquals(address2, address);
     }
     
-    
     /**
      * Test verifies that addresses with different area codes are not equal.
      */
@@ -38,7 +37,6 @@ public class AddressTest {
         
         assertEquals(false, address.equals(address2));
     }
-    
     
     /**
      * Test verifies that addresses are not equal if all the attributes don't match.

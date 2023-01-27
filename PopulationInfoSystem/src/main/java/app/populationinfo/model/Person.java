@@ -20,7 +20,6 @@ public class Person {
     private List<Person> parents;
     private List<AddressInfo> addresses = new ArrayList<>();
     
-    
     /**
      * Constructor.
      * 
@@ -37,7 +36,6 @@ public class Person {
         this.timeOfBirth = timeOfBirth;
         this.parents = parents;
     }
-    
     
     /**
      * Constructor with time of death.
@@ -114,7 +112,6 @@ public class Person {
         this.addresses = addresses;
     }
     
-    
     /**
      * Adds a new parent for person.
      * 
@@ -129,7 +126,6 @@ public class Person {
         parents.add(parent);
     }
     
-    
     /**
      * Removes given person from the list of parents.
      * 
@@ -139,7 +135,6 @@ public class Person {
     public boolean removeParent(Person person) {
         return parents.remove(person);
     }
-    
     
     /**
      * Adds a new address for person. Stops the old addresses.
@@ -162,7 +157,6 @@ public class Person {
         
         return addressInfo;
     }
-    
     
     /**
      * Creates a copy of the person object.
@@ -189,7 +183,6 @@ public class Person {
         return super.hashCode();
     }
     
-    
     /**
      * Finds current address.
      * 
@@ -204,7 +197,6 @@ public class Person {
         
         return null;
     }
-    
     
     /**
      * Gets a person's address info by address.

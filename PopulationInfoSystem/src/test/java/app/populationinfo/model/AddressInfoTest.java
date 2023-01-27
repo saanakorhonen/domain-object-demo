@@ -29,7 +29,6 @@ public class AddressInfoTest {
         assertEquals(addressInfo2, addressInfo);
     }
     
-    
     /**
      * Test verifies that move out days need to be the same if not null.
      */

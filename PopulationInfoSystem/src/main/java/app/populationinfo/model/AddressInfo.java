@@ -13,8 +13,7 @@ public class AddressInfo {
     private Address address;
     private Person resident;
     private LocalDate moveInDate;
-    private LocalDate moveOutDate;
-    
+    private LocalDate moveOutDate;  
     
     /**
      * Constructor.
@@ -28,8 +27,7 @@ public class AddressInfo {
         this.resident = resident;
         this.moveInDate = moveInDate;
     }
-    
-    
+     
     /**
      * Constructor with moving out Date.
      * 
@@ -76,7 +74,6 @@ public class AddressInfo {
     public void setMoveOutDate(LocalDate moveOutDate) {
         this.moveOutDate = moveOutDate;
     }
-    
     
     /**
      * Creates a copy of address info.

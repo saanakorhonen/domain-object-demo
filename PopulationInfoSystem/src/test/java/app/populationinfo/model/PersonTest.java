@@ -34,7 +34,6 @@ public class PersonTest {
         assertTrue(person.equals(person2));
     }
     
-    
     /**
      * Test verifies that comparing two otherwise same persons with different identity code will fail.
      */
@@ -48,7 +47,6 @@ public class PersonTest {
         assertEquals(false, person.equals(person2));
     }
     
-    
     /**
      * Assert that the new address is successfully added as the current address.
      */
@@ -60,7 +58,6 @@ public class PersonTest {
         
         assertEquals(address, person.findCurrentAddress().getAddress());
     }
-    
     
     /**
      * Test verifies that when new address is added, old address has an added date for moving out.
@@ -82,7 +79,6 @@ public class PersonTest {
         assertNotNull(info.getMoveOutDate());
     }
     
-    
     /**
      * Tests adding parent successfully. Verifies that parent is added to the list of parents.
      */
@@ -100,7 +96,6 @@ public class PersonTest {
         assertEquals(parentCandidate, parent);
     }
     
-    
     /**
      * Test verifies that only two parents are permitted per person.
      */
@@ -117,7 +112,6 @@ public class PersonTest {
             person.addParent(parent3);
         });
     }
-    
     
     /**
      * Verifies that parent can be successfully removed.

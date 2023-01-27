@@ -23,7 +23,6 @@ public class TestUtil {
     private static final String DEFAULT_ADDRESS_NAME = "TestAddress 1 A1";
     private static final String DEFAULT_AREA_CODE = "00100";
    
-    
     /**
      * Creates a default person.
      * 
@@ -32,8 +31,7 @@ public class TestUtil {
     public static Person createPerson() {
         return createPerson(false);
     }
-    
-
+   
     /**
      * Creates a default person.
      * 
@@ -44,7 +42,6 @@ public class TestUtil {
         LocalDate deathTime = isDead ? DEFAULT_DEATH_TIME : null;
         return createPerson(DEFAULT_IDENTITY_CODE, DEFAULT_FIRST_NAME, DEFAULT_LAST_NAME, DEFAULT_BIRTH_TIME, deathTime);
     }
-    
     
     /**
      * Creates a person with given name and and if the person is deceased.
@@ -61,7 +58,6 @@ public class TestUtil {
         return createPerson(identityCode, firstName, lastName, DEFAULT_BIRTH_TIME, deathTime);
     }
 
-    
     /**
      * Creates a person with name and birth time and optional death time.
      * 
@@ -79,8 +75,7 @@ public class TestUtil {
         return new Person(identityCode, firstName, lastName, birthTime, deathTime, new ArrayList<Person>());
         
     }
-    
-
+   
     /**
      * Creates an address.
      * 
@@ -90,7 +85,6 @@ public class TestUtil {
         return createAddress(DEFAULT_ADDRESS_NAME);
     }
     
-
     /**
      * Creates an address with a given name.
      * 
